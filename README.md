@@ -1,1 +1,4 @@
-# React with webpack starter kit
+# React starter kit with: 
+- mobx-state-tree
+- styled components
+
