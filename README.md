@@ -1,1 +1,1 @@
-# React witch webpack starter kit
+# React with webpack starter kit
