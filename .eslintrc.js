@@ -22,5 +22,8 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-double"]
     }
 };
