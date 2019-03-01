@@ -7,6 +7,11 @@ module.exports = {
     filename: "./bundle.js",
     path: path.resolve(__dirname, "/build")
   },
+  resolve: {
+    alias: {
+      '@app': path.resolve(__dirname, "src/scripts")
+    }
+  },
   mode: "development",
   module: {
     rules: [
