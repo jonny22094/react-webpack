@@ -1,11 +1,13 @@
 module.exports = {
+    "parser": "babel-eslint",
     "env": {
         "browser": true,
         "es6": true
     },
     "extends": [
         "eslint:recommended",
-        'plugin:react/recommended'
+        'plugin:react/recommended',
+        "plugin:flowtype/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,11 +21,17 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "flowtype"
     ],
     "rules": {
         "semi": ["error", "never"],
         "quotes": ["error", "single"],
         "jsx-quotes": ["error", "prefer-double"]
+    },
+    "settings": {
+        "flowtype": {
+          "onlyFilesWithFlowAnnotation": true
+        }
     }
 };
