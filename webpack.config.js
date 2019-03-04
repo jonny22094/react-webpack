@@ -5,7 +5,12 @@ module.exports = {
   entry: './src/bootstrap.js',
   output: {
     filename: './bundle.js',
-    path: path.resolve(__dirname, '/build')
+    path: path.resolve(__dirname, '/build'),
+    publicPath: '/'
+  },
+  devtool: 'source-map',
+  devServer: {
+    historyApiFallback: true,
   },
   resolve: {
     alias: {
