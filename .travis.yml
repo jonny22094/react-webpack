@@ -10,5 +10,5 @@ cache:
 install:
   - npm install
 
-srcipt:
+script:
   - npm run flow:status
