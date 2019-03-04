@@ -1,9 +1,9 @@
 # React starter kit 
 
 ## Run
-| `npm i`
-| 2. `npm run watch`
-| 3. Server start in `localhost:3000`
+ 1. `npm i`
+ 2. `npm run watch`
+ 3. Server start in `localhost:3000`
   
   
 ## Starter kits
