@@ -3,7 +3,7 @@
 ## Run:
   1. `npm i`
   2. `npm run watch`
-  Server start in `localhost:3000`
+  3. Server start in `localhost:3000`
   
   
 ## Bootstraps
