@@ -5,6 +5,7 @@
   "scripts": {
     "watch": "./node_modules/.bin/webpack-dev-server --port 3000",
     "build": "./node_modules/.bin/webpack --progress",
+    "flow:status": "flow status",
     "clean": "rm -rf out"
   },
   "license": "MIT",
