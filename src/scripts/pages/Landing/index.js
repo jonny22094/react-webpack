@@ -7,7 +7,7 @@ class Landing extends Component<{}> {
   render() {
     return (
       <Container>
-        <Image src={Logo} width={'150px'}/>
+        <Image src={Logo} width={'250px'}/>
         <p>Hello world!</p>
       </Container>
     )
