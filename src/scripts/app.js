@@ -1,27 +1,23 @@
 //@flow
 import React, {Component} from 'react'
 import {Provider} from 'mobx-react'
-import {ThemeProvider} from 'styled-components'
 import {Store} from '@app/types'
-import {theme} from '@app/config'
+import Routes from '@app/routes'
+import {ThemeProvider} from 'styled-components'
 import {GlobalStyles} from '@app/components/globalStyles'
-import {Container, Image} from '@app/components/styles'
-import Logo from '@app/images/logo.png'
+import {theme} from '@app/config'
 
 const store = Store.create()
 
 class App extends Component<{}> {
   render() {
     return (
-      <ThemeProvider theme={theme}>
-        <Provider store={store}>
-          <Container>
-            <GlobalStyles/>
-            <Image src={Logo} width={'150px'}/>
-            <p>Hello world!</p>
-          </Container>
-        </Provider>
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <GlobalStyles />
+          <Routes />
+        </ThemeProvider>
+      </Provider>
     )
   }
 }
